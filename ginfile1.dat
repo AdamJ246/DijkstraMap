@@ -1,0 +1,13 @@
+Austin;Dallas;200
+Dallas;Austin;200
+Washington;Dallas;1300
+Washington;Atlanta;600
+Atlanta;Washington;600
+Atlanta;Houston;800
+Houston;Atlanta;800
+Denver;Chicago;1000
+Austin;Houston;160
+Chicago;Denver;1000
+Dallas;Chicago;900
+Dallas;Denver;780
+Denver;Atlanta;1400

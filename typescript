@@ -1,0 +1,52 @@
+Script started on Thu 02 May 2024 01:29:36 AM EDT
+]0;johnston_ar@cobra:~/Project4[?1034h[johnston_ar@cobra Project4]$ cat [K[K[K[Kc++ dijkstra.cpp
+]0;johnston_ar@cobra:~/Project4[johnston_ar@cobra Project4]$ ./a.out ginfile1.dat
+
+      ^^^^^^^^^^^^^^^^ DIJKSTRA'S ALGORITHM ^^^^^^^^^^^^^^^^
+
+A Weighted Graph Has Been Built For These 7 Cities: 
+           Atlanta             Austin            Chicago 
+            Dallas             Denver            Houston 
+        Washington 
+
+Please input your starting vertex: Atlanta
+
+------------------------------------------------------------------
+            Vertex          Distance          Previous
+           Atlanta                 0               N/A
+        Washington               600           Atlanta
+           Houston               800           Atlanta
+            Dallas              1900        Washington
+            Austin              2100            Dallas
+            Denver              2680            Dallas
+           Chicago              2800            Dallas
+------------------------------------------------------------------
+                  A cycle has been detected
+
+]0;johnston_ar@cobra:~/Project4[johnston_ar@cobra Project4]$ ./a.out ginfile1.dat[1P.dat2.dat
+
+      ^^^^^^^^^^^^^^^^ DIJKSTRA'S ALGORITHM ^^^^^^^^^^^^^^^^
+
+A Weighted Graph Has Been Built For These 7 Cities: 
+                V1                 V2                 V3 
+                V4                 V5                 V6 
+                V7 
+
+Please input your starting vertex: V1
+
+------------------------------------------------------------------
+            Vertex          Distance          Previous
+                V1                 0               N/A
+                V4                 1                V1
+                V2                 2                V1
+                V5                 3                V4
+                V3                 3                V4
+                V7                 5                V4
+                V6                 8                V3
+------------------------------------------------------------------
+                  A cycle has been detected
+
+]0;johnston_ar@cobra:~/Project4[johnston_ar@cobra Project4]$ exit
+exit
+
+Script done on Thu 02 May 2024 01:30:51 AM EDT

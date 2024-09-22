@@ -1,0 +1,29 @@
+
+Purpose:
+	to take a purposely formatted text file and make a graph using it, before allowing the user to see the distance from a chosen
+	starting vertex to every other vertex available.
+This program inputs:
+	1. Text file: a specified file in the command line for the program to open a stream to.
+	2. An unspecified user input STRING representing a desired vertex starting point.
+This program outputs:
+	Displays the title of the program before displaying the names of every city found in the user input text file.
+	It will then prompt the user for an input vertex. After this, the program will take the first starting vertex traverse the
+	internally created graph until every vertex is marked as having a previous vertex. Then, the program will print out every
+	vertex, its distance from the start, and the previous vertex it originates from.
+	Finally, the program will internally detect a cycle if there is one formed while traversing the graph.
+This program uses/includes:
+	iostream, string, iomanip, sstream, vector, algorithm, stack, climits, "HashTable.h", "graph.h", "queue.h"
+	where the .h files are local and used to create the HashTable to determine duplicate vertices, the graph to store vertices
+	and organized edge values, and queues used throughout the entire program for various purposes.
+Outline:
+	The code uses a file stream on a command line file and traverses each line while separating the lines into 
+	origin;destination;weight. Then, it will store those origins and destinations into a graph, HashTable, list of strings, and
+	a list of GPieces (making sure there are no duplicates). The GPiece is a struct created and used to imitate a vertex piece
+	containing the distance, mark, previous vertex, and name of that vertex. Lastly, it will use the weight to make an edge between
+	destination and origin using the specific function AddEdge. Afterwards, the program will then recursively traverse 
+	each marked vertex's adjacent vertices and determines the smallest distance adjacent vertex, marking it, before making that
+	the next target for traversal. This repeats until every vertex is marked or a limit is reached, where it will be determined that
+	any extra unmarked vertices have no path to the desired original vertex (this is made sure by a queue that stores any unmarked
+	extra adjacent vertices to be traversed when a dead end is encountered). Finally, the program will have through recursion and 
+	the use of a stack determined whether a cycle exists within the program once a path reaches a "dead end" AND there is a present
+	adjacent vertex that is marked (the cycle origin).

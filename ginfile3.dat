@@ -1,0 +1,34 @@
+Atlanta;Augusta;140
+Augusta;Atlanta;140
+Atlanta;Athens;70
+Athens;Atlanta;70
+Atlanta;Macon;80
+Macon;Atlanta;80
+Macon;Savannah;160
+Savannah;Macon;160
+Macon;Valdosta;150
+Valdosta;Macon;150
+Macon;Warner Robins;20
+Warner Robins;Macon;20
+Savannah;Baxley;110
+Baxley;Savannah;110
+Macon;Baxley;120
+Baxley;Macon;120
+Ft. Oglethorpe;Atlanta;110
+Atlanta;Ft. Oglethorpe;110
+Norcross;Atlanta;20
+Atlanta;Norcross;20
+Suwanee;Norcross;20
+Norcross;Suwanee;20
+Suwanee;Atlanta;30
+Atlanta;Suwanee;30
+Macon;Conyers;90
+Conyers;Macon;90
+Conyers;Atlanta;20
+Atlanta;Conyers;20
+Macon;Athens;90
+Athens;Macon;90
+Augusta;Athens;90
+Athens;Augusta;90
+Augusta;Savannah;140
+Savannah;Augusta;140
